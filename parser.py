@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+    并查集
+    哈斯图
+"""
+
 import stanfordnlp
 # from pyhanlp import *
 
