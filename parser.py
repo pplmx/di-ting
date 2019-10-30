@@ -5,10 +5,11 @@
     并查集
     哈斯图
 """
+from collections import Counter
 
+import jieba
 from pyhanlp import *
 
-analyzer = PerceptronLexicalAnalyzer()
 tokenizer = JClass("com.hankcs.hanlp.tokenizer.NLPTokenizer")
 
 
@@ -25,6 +26,14 @@ def prepare(file):
                     print(tokenizer.analyze(line).translateLabels())
 
 
+def read_novel(file):
+    with open(file, encoding='UTF-8') as f:
+        return jieba.lcut(f.read())
+
+
 if __name__ == '__main__':
-    prepare('惟我独仙.txt')
+    # prepare('惟我独仙.txt')
     # print(tokenizer.analyze('冥英王楞楞的道：“他，他真的放过了你。  ”'))
+    ll = list(filter(lambda i: len(i) > 1, read_novel('惟我独仙.txt')))
+    ll = Counter(ll)
+    print(ll)
