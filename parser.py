@@ -12,6 +12,7 @@ import jieba.posseg
 from pyhanlp import *
 
 tokenizer = JClass("com.hankcs.hanlp.tokenizer.NLPTokenizer")
+crf_seg = HanLP.newSegment('crf')
 
 
 def read_novel_hanlp(file):
@@ -26,6 +27,7 @@ def read_novel_hanlp(file):
                 if i < 10:
                     print(i, line)
                     # transfer to python string
+                    # line_part_speech_list = crf_seg.seg(line).__str__()
                     line_part_speech_list = tokenizer.analyze(line).translateLabels().__str__().split(' ')
                     # convert to tuple list
                     line_part_speech_list = [(j.split('/')[0], j.split('/')[1]) for j in line_part_speech_list]
@@ -52,8 +54,8 @@ def read_novel_jieba(file):
 
 
 if __name__ == '__main__':
-    read_novel_hanlp('惟我独仙.txt')
+    ll = read_novel_hanlp('惟我独仙.txt')
     # print(tokenizer.analyze('冥英王楞楞的道：“他，他真的放过了你。  ”'))
     # ll = read_novel_jieba('惟我独仙.txt')
-    # ll = Counter(ll)
-    # print(ll)
+    ll = Counter(ll)
+    print(ll)
