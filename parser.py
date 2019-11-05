@@ -19,7 +19,7 @@ def read_novel_hanlp(file):
     all_part_speech_list = []
     with open(file, encoding='UTF-8') as f:
         i = 0
-        for line in f.readlines():
+        for line in f:
             i += 1
             # filter the empty line
             line = line.strip()
@@ -41,7 +41,7 @@ def read_novel_jieba(file):
     all_part_speech_list = []
     with open(file, encoding='UTF-8') as f:
         i = 0
-        for line in f.readlines():
+        for line in f:
             i += 1
             # filter the empty line
             line = line.strip()
