@@ -33,7 +33,7 @@ def read_novel_hanlp(file):
                 line_part_speech_list = [(j.split('/')[0], j.split('/')[1]) for j in line_part_speech_list]
                 # filter the word whose length is less than 2
                 line_part_speech_list = list(filter(lambda x: len(x[0]) > 1, line_part_speech_list))
-                role_list += list(filter(lambda x: len(x[1]) == '人名', line_part_speech_list))
+                role_list += list(filter(lambda x: x[1] == '人名', line_part_speech_list))
                 all_part_speech_list += line_part_speech_list
         return all_part_speech_list, role_list
 
