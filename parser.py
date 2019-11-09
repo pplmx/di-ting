@@ -70,4 +70,5 @@ if __name__ == '__main__':
     # print(tokenizer.analyze('冥英王楞楞的道：“他，他真的放过了你。  ”'))
     # ll = read_novel_jieba('惟我独仙.txt')
     all_list = Counter(all_list)
+    # all_list = filter(lambda i: all_list[i] > 10, all_list)
     print(all_list)
