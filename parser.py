@@ -14,7 +14,7 @@ from pyhanlp import *
 tokenizer = JClass("com.hankcs.hanlp.tokenizer.NLPTokenizer")
 stop_word_dict = JClass("com.hankcs.hanlp.dictionary.stopword.CoreStopWordDictionary")
 # viterbi, dat, crf, perceptron, nshort
-crf_seg = HanLP.newSegment('perceptron')
+crf_seg = HanLP.newSegment('crf')
 
 
 def read_novel_hanlp(file):
@@ -44,7 +44,7 @@ def read_novel_hanlp(file):
                 # filter the word whose length is less than 2
                 line_part_speech_list = list(filter(lambda x: len(x[0]) > 1, line_part_speech_list))
                 # extract the people's names
-                role_list += list(filter(lambda x: x[1].startswith('nr'), line_part_speech_list))
+                role_list += list(filter(lambda x: x[1].startswith('nr') or x[1] == 'n', line_part_speech_list))
                 all_part_speech_list += line_part_speech_list
         return all_part_speech_list, role_list
 
@@ -69,6 +69,12 @@ if __name__ == '__main__':
     all_list, roles = read_novel_hanlp('惟我独仙.txt')
     # print(tokenizer.analyze('冥英王楞楞的道：“他，他真的放过了你。  ”'))
     # ll = read_novel_jieba('惟我独仙.txt')
-    all_list = Counter(all_list)
-    # all_list = filter(lambda i: all_list[i] > 10, all_list)
-    print(all_list)
+    roles = Counter(roles)
+    # filter some elements whose appearing times is less than or equal 10
+    roles = {i: roles[i] for i in roles if roles[i] > 10}
+    print(roles)
+    # due to dict comprehension, dict has already been unordered, so order the dict again, which will output a list
+    roles = sorted(roles.items(), key=lambda i: i[1], reverse=True)
+    # regenerate the dict
+    roles = {i[0]: i[1] for i in roles}
+    print(roles)
