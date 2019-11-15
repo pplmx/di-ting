@@ -44,8 +44,8 @@ def read_novel_hanlp(file):
                 # filter the word whose length is less than 2
                 line_part_speech_list = list(filter(lambda x: len(x[0]) > 1, line_part_speech_list))
                 # extract the people's names
-                # role_list += list(filter(lambda x: x[1].startswith('nr') or x[1] == 'n', line_part_speech_list))
-                role_list += list(filter(lambda x: x[1].startswith('nr'), line_part_speech_list))
+                role_list += list(filter(lambda x: x[1].startswith('nr') or x[1] == 'n', line_part_speech_list))
+                # role_list += list(filter(lambda x: x[1].startswith('nr'), line_part_speech_list))
                 all_part_speech_list += line_part_speech_list
         return all_part_speech_list, role_list
 
