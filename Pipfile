@@ -10,7 +10,7 @@ pyhanlp = "*"
 stanza = "*"
 jieba = "*"
 torch = "*"
-
+jupyter = "*"
 
 [requires]
 python_version = "3.8"
