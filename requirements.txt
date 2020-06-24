@@ -1,0 +1,15 @@
+certifi==2020.4.5.1
+chardet==3.0.4
+future==0.18.2
+idna==2.9
+jieba==0.42.1
+numpy==1.19.0
+Pillow==7.1.2
+protobuf==3.12.2
+requests==2.24.0
+six==1.15.0
+stanza==1.0.1
+torch==1.5.0+cpu
+torchvision==0.6.0+cpu
+tqdm==4.46.1
+urllib3==1.25.9
