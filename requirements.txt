@@ -7,13 +7,13 @@ joblib==0.16.0
 JPype1==0.7.0
 numpy==1.19.1
 Pillow==7.2.0
-protobuf==3.12.4
+protobuf==3.13.0
 pyhanlp==0.1.66
 requests==2.24.0
 scikit-learn==0.23.2
 scipy==1.5.2
 six==1.15.0
-stanza==1.0.1
+stanza==1.1.1
 threadpoolctl==2.1.0
 torch==1.6.0+cpu
 torchvision==0.7.0+cpu
