@@ -7,7 +7,7 @@ joblib==1.0.1
 JPype1==1.2.1
 numpy==1.20.3
 Pillow==8.2.0
-protobuf==3.16.0
+protobuf==3.17.0
 pyhanlp==0.1.78
 requests==2.25.1
 scikit-learn==0.24.2
