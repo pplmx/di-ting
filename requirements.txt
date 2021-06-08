@@ -13,7 +13,7 @@ requests==2.25.1
 scikit-learn==0.24.2
 scipy==1.6.3
 six==1.16.0
-stanza==1.2
+stanza==1.2.1
 threadpoolctl==2.1.0
 torch==1.8.1
 torchvision==0.9.1
