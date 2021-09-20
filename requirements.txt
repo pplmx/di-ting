@@ -15,7 +15,7 @@ scipy==1.7.1
 six==1.16.0
 stanza==1.2.3
 threadpoolctl==2.2.0
-torch==1.9.0
+torch==1.9.1
 torchvision==0.10.0
 tqdm==4.62.3
 urllib3==1.26.6
