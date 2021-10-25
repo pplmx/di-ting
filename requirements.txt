@@ -10,7 +10,7 @@ Pillow==8.4.0
 protobuf==3.19.0
 pyhanlp==0.1.79
 requests==2.26.0
-scikit-learn==1.0
+scikit-learn==1.0.1
 scipy==1.7.1
 six==1.16.0
 stanza==1.3.0
