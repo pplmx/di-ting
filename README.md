@@ -1,1 +1,3 @@
-# generate role relationship diagram for a novel
+# 谛听, DiTing
+
+generate role relationship diagram for a novel
