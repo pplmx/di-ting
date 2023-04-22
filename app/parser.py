@@ -62,7 +62,7 @@ def read_novel_jieba(file):
 
 
 if __name__ == '__main__':
-    all_list, roles = read_novel_hanlp('惟我独仙.txt')
+    all_list, roles = read_novel_hanlp('../data/惟我独仙.txt')
     # print(tokenizer.analyze('冥英王楞楞的道：“他，他真的放过了你。  ”'))
     # ll = read_novel_jieba('惟我独仙.txt')
     roles = Counter(roles)

@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "di-ting"
+version = "0.1.0"
+description = ""
+authors = ["Mystic <215104920@qq.com>"]
+readme = "README.md"
+packages = [{ include = "di_ting" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+stanza = "^1.5.0"
+jieba = "^0.42.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
