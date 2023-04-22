@@ -165,25 +165,6 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 reference = "tsinghua"
 
 [[package]]
-name = "hanlp-downloader"
-version = "0.0.25"
-description = "A tool and library to save large files by creating multiple connections, modified from pget by Halil Ozercan."
-category = "main"
-optional = false
-python-versions = "*"
-files = [
-    {file = "hanlp_downloader-0.0.25.tar.gz", hash = "sha256:11081cd55d8ad84ba909fe870dd10ef5e26b720d254f73f800b281cfb6c5d1b4"},
-]
-
-[package.dependencies]
-requests = "*"
-
-[package.source]
-type = "legacy"
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
-reference = "tsinghua"
-
-[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -233,33 +214,6 @@ MarkupSafe = ">=2.0"
 
 [package.extras]
 i18n = ["Babel (>=2.7)"]
-
-[package.source]
-type = "legacy"
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
-reference = "tsinghua"
-
-[[package]]
-name = "jpype1"
-version = "0.7.0"
-description = "A Python to Java bridge."
-category = "main"
-optional = false
-python-versions = "*"
-files = [
-    {file = "JPype1-0.7.0-cp27-cp27m-manylinux2010_x86_64.whl", hash = "sha256:6c2d30314f0661356b08dc30550b809d9f3e0fe2e1bc88c5b46c7625134fecda"},
-    {file = "JPype1-0.7.0-cp27-cp27mu-manylinux2010_x86_64.whl", hash = "sha256:215b44d6ab50b84a1876dbaf6e879080ab80224fd4482c738aeb513874090a76"},
-    {file = "JPype1-0.7.0-cp34-cp34m-manylinux2010_x86_64.whl", hash = "sha256:2eedeb610a1c750b238f7f47f9d87466c123c73f994cdc00fb989f3df0a36a83"},
-    {file = "JPype1-0.7.0-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:e838ffe46636368bbf981d844cefbc6f6a07086d19127cdc646c07fabc70926b"},
-    {file = "JPype1-0.7.0-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:ceb7f5c4a87886baa071e2e2ddf1a1fb57e9c1e8775e41bf16a487ec046f6d59"},
-    {file = "JPype1-0.7.0-cp36-cp36m-win_amd64.whl", hash = "sha256:8a2a0141efa69c2ffd76cea5eef123ec475efc3a42f6613330c412a0826f2515"},
-    {file = "JPype1-0.7.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:f7fd1be0f7b653db156977ad90a8a3dd970662faca5f63f857589a9091fdbf0e"},
-    {file = "JPype1-0.7.0-cp37-cp37m-win_amd64.whl", hash = "sha256:67fb41407d233868c5822b2ee7efa74c91c9b4bcd03459121c4f86677370f3e5"},
-    {file = "JPype1-0.7.0.tar.gz", hash = "sha256:1630439d5b0fb49e2878b43a1a1f074f9d4f46520f525569e14f1f0f9399f871"},
-]
-
-[package.extras]
-numpy = ["numpy (>=1.6)"]
 
 [package.source]
 type = "legacy"
@@ -443,26 +397,6 @@ files = [
     {file = "protobuf-4.22.3-py3-none-any.whl", hash = "sha256:52f0a78141078077cfe15fe333ac3e3a077420b9a3f5d1bf9b5fe9d286b4d881"},
     {file = "protobuf-4.22.3.tar.gz", hash = "sha256:23452f2fdea754a8251d0fc88c0317735ae47217e0d27bf330a30eec2848811a"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
-reference = "tsinghua"
-
-[[package]]
-name = "pyhanlp"
-version = "0.1.84"
-description = "Python wrapper for HanLP: Han Language Processing"
-category = "main"
-optional = false
-python-versions = "*"
-files = [
-    {file = "pyhanlp-0.1.84.tar.gz", hash = "sha256:1047b2b6515c9844648c48f45b1f1cdb9a413067bea55587717a52c2944ad616"},
-]
-
-[package.dependencies]
-hanlp-downloader = "*"
-jpype1 = "0.7.0"
 
 [package.source]
 type = "legacy"
@@ -681,4 +615,4 @@ reference = "tsinghua"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "835ffb5bc59d0f5c99d912aa069c20f259bd31173ef1aa628d436e5edc717a78"
+content-hash = "b18c037f0c033757adca7ea13635104922b658c226c7d8ed983fb95db3d27435"
