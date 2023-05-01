@@ -10,6 +10,8 @@ packages = [{ include = "di_ting" }]
 python = "^3.11"
 stanza = "^1.5.0"
 jieba = "^0.42.1"
+torchvision = "^0.15.1"
+torchaudio = "^2.0.1"
 
 [build-system]
 requires = ["poetry-core"]
